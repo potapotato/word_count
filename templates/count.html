@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+    <h2>输入的字数总数为: {{ total_count }}</h2>
+    <div>
+        输入的文本为:
+        <br>
+        <br>
+        {{ input_message }}
+    </div>
+    <h2>统计分析:</h2>
+    <br>
+    <div>
+        {% for k,y in words %}
+            {{ k }} - {{ y }}
+            <br>
+        {% endfor %}
+    </div>
+</body>
+</html>
